@@ -4,7 +4,7 @@ from google.cloud import texttospeech
 import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="text-to-speech-key.json"
 
-project_id = 'canvas-provider-406715'
+project_id = ENV['PROJECT_ID']
 location = 'global'
 output_gcs_uri = 'gs://alohadoo-posts/bipolarity-research.wav'
 
